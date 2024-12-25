@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/cb06fec0a1.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--music calisisi-->
+    <div class="music-player">
+        <!-- oynatma listesi-->
+        <button id="playlist">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <!-- sarkici resmi-->
+        <img src="assets/ibrahim-tatlises.jpeg" alt="" id="song-image">
+        <!-- sarki detayi -->
+        <div class="song-details">
+            <p id="song-name">Aramam</p>
+            <p id="song-artist">Ibo Tatlises</p>
+        </div>
+        <!--oynatma secenekleri-->
+        <div class="player-options">
+            <button id="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" class="hide">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+        </div>
+        <!-- ses -->
+        <audio id="audio" preload="metadata" ></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
+        <!-- zaman -->
+        <div class="time-container">
+            <span id="current-time">00.12</span>
+            <span id="max-duration">03.01</span>
+        </div>
+        <!--sarki listesi-->
+        <div id="playlist-container" class="">
+            <button id="close-button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul id="playlist-songs">
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <!--
+       var ec6 let, ec7 const js versiyonlar ->
+       ec8
+       %1
+
+       React, Vue, Angular -> %99 js tam bilmez
+    -->
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+
+
+</body>
+</html>
